@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='es-AR'>
+    <head>
+        <meta charset='utf-8'>
+        <title> Formulario carrito de compra </title>
+        <link rel="icon" type="image/png" href="img/PV.png">
+        <style>
+            table,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form action="servidor.html" method="post">
+            <table>
+                <caption>Ingrese los datos para finalizar la compra</caption>
+                <tbody>
+                    <tr>
+                        <td><label for="in-username"> Nombre: </label></td>
+                        <td><input type="text" name="username" id="in-username" required placeholder="John"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-userlastname"> Apellido: </label></td>
+                        <td><input type="text" name="userlastname" id="in-userlastname" required placeholder="Doe"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-fecha"> Fecha de nacimiento: </label></td>
+                        <td><input type="date" id="in-fecha" name="fecha-date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-userid"> DNI: </label></td>
+                        <td><input type="text" name="in-userid" id="in-in-userid" required placeholder="30000000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-email">e-mail</label></td>
+                        <td><input type="email" name="email" id="in-email" required placeholder="johndoe@gmail.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="list-texto">Seleccione la versión: </label></td>
+                        <td><input type="text" name="lista-versiones" id="list-texto" list="lista-versiones"></td>
+                    </tr>
+                    <datalist id="lista-versiones">
+                        <option>Basic</option>
+                        <option>Basic PRO</option>
+                        <option>Upper</option>
+                        <option>Premiun</option>
+                    </datalist>
+                    <tr>
+                        <td><label for="sel-colores"> Seleccione un color para su auto: </label></td>
+                        <td>
+                            <select name="sel-colores" id="sel-colores">
+                            <option value="rgb(150,0,0)">Rojo</option>
+                            <option value="rgb(0,0,0)">Blanco</option>
+                            <option value="rgb(150,150,150)" selected>Negro</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <fieldset>
+                <legend>Elija metodo de pago </legend>
+                <label for="in-1c">Efectivo</label>
+                <input type="radio" value="1" name="cuotas" id="in-1c">
+                <label for="in-12c"> Financiado 12 Cuotas</label>
+                <input type="radio" value="12" name="cuotas" id="in-12c">
+                <label for="in-24c">Financiado 24 Cuotas</label>
+                <input type="radio" value="24" name="cuotas" id="in-24c">
+            </fieldset>
+            <button type="submit" text-align: center>Enviar</button>
+            <button type="reset" text-align: center> Borrar </button>
+        </form>
+    </body>
+    
+</html>

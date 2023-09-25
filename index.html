@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>PV Automotores</title>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <title> PV Automotores  </title>
+        <link rel="icon" type="image/png" href="img/PV.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
-<body bgcolor="grey">
+        <style>
+            table,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            article{
+                background-color: whitesmoke; 
+                border: 2px solid whitesmoke; 
+                margin: 20px; 
+                padding: 40px;
+            }
+        </style>
+    </head>
+
+<body style=" background-color: rgb(51, 102, 153)">
     <header>
         <img src="img/logo.PNG" alt="PV Automotores" width="70px" height="70px">
         <h1>PV Automotores</h1>
-        <input type="search" >
-        <a href="pagos.html"><img src="img/carrito.png" alt="Realizar Compra" width="30px" height="30px"></a>
-        <a href="login.html"><img src="img/login.jpg" alt="Iniciar Sesion" width="30px" height="30px"></a>
-
+        <label for="search"> Buscar:</label>
+        <input type="search" id="in-search" name="search">
+        <form action="pagos.html">
+        <button type="submit" value="Finalizar compra">
+            <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+        </button>
+        </form>
+        <button>
+            <span class="material-symbols-outlined">
+                login
+                </span>
+        </button>
         <nav>
             <a href="home.html"><button>Home</button></a>
             <a href="marcas.html"><button>Marcas</button></a>
@@ -20,8 +45,66 @@
             <a href="usados.html"><button>Usados</button></a>            
         </nav>
     </header>
-
-    
+    <hr> <!--linea agregada para observar mejor la division de elementos-->
+    <main style="background-color:rgb(220,220,220); border: 0cap;">
+        <section>
+            <article>
+                <img src="img/auto_negro.jpg" alt="auto negro" width="100px" height="100px">
+                <p><span style="text-decoration: line-through;">$ 8500000</span></p>
+                <h2>$ 8000000</h2>
+                <p style="font-weight: bold; color: black;"><a>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur omnis fugiat iste placeat eum blanditiis, optio soluta nemo velit voluptate!</a></p>
+                <p style="font-weight: bold; color: green;"> Entrega inmediata!</p>
+                <span class="material-symbols-outlined">add_shopping_cart</span>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="img/auto amarillo.jpg" alt="auto amarillo" width="100px" height="100px">
+                <p><span style="text-decoration: line-through;">$ 5000000</span></p>
+                <h2>$ 4000000</h2>
+                <p style="font-weight: bold; color: black;"><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, cupiditate repellat ratione laborum alias animi distinctio non vel temporibus.</a></p>
+                <p style="font-weight: bold; color: green;"> Entrega inmediata!</p>
+                <span class="material-symbols-outlined">add_shopping_cart</span>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="img/auto_rojo.jpg" alt="auto rojo" width="100px" height="100px">
+                <p><span style="text-decoration: line-through;">$ 6000000</span></p>
+                <h2>$ 5000000</h2>
+                <p style="font-weight: bold; color: black;"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident ipsam aliquid beatae atque laborum ratione a? At?</a></p>
+                <p style="font-weight: bold; color: green;"> Entrega inmediata!</p>
+                <span class="material-symbols-outlined">add_shopping_cart</span>
+            </article>
+        </section>
+    </main>
+    <aside style="background-color: rgb(220,220,220); border: 0cap;">
+        <table>
+            <caption>Recomendados</caption>
+            <tbody>
+                <tr>
+                    <td>$250.000 Ford Escort</td>
+                    <td><img src="img/auto_azul.jpg" alt="auto rojo" width="100px" height="100px"></td>
+                </tr>
+                <tr>
+                    <td>$220.000 Fiat Uno</td>
+                    <td><img src="img/auto_blanco.png" alt="auto rojo" width="100px" height="100px"></td>
+                </tr>
+                <tr>
+                    <td>$230.000 Kia Q</td>
+                    <td><img src="img/auto_naranja.jpg" alt="auto rojo" width="100px" height="100px"></td>
+                </tr>
+                <tr>
+                    <td>$190.000 Peugeot 405</td>
+                    <td><img src="img/auto_gris.jpg" alt="auto rojo" width="100px" height="100px"></td>
+                </tr>
+            </tbody>
+        </table>
+    </aside>
 </body>
+
+<footer style=" background-color: beige">
+    <p>C 2023 - Dsarrollado por Grupo 2: Eric Ponin - Nicolas Valenciano</p>
+</footer>
 
 </html>
